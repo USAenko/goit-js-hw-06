@@ -21,5 +21,6 @@ const galleryStyles = document.querySelector('.gallery');
 const imgArray = images
 	.map(item => `<li><img width=300 src='${item.url}' alt='${item.alt}'></li>`,).join("");
 
+// console.log(galleryStyles);
 galleryStyles.insertAdjacentHTML("beforeend", imgArray);
 console.log(galleryStyles);
