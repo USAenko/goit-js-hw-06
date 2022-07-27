@@ -15,10 +15,11 @@ const images = [
 
 const galleryStyles = document.querySelector('.gallery');
   galleryStyles.style.display = "flex";
+  galleryStyles.style.justifyContent = 'space-around';
   galleryStyles.style.listStyle = "none";
-  galleryStyles.style.justifyContent = 'space-between';
   
 const imgArray = images
 	.map(item => `<li><img width=300 src='${item.url}' alt='${item.alt}'></li>`,).join("");
 
-galleryStyles.insertAdjacentHTML("afterbegin", imgArray);
+galleryStyles.insertAdjacentHTML("beforeend", imgArray);
+console.log(galleryStyles);
