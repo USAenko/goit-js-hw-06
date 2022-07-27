@@ -18,5 +18,5 @@ for (let ingredient of ingredients) {
   list.push(createLi);
 }
 
-const workArea = document.querySelector("ul");
+const workArea = document.querySelector("ul#ingredients");
 workArea.append(...list);
