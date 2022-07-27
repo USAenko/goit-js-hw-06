@@ -9,6 +9,16 @@ function onFormSubmit(action) {
     const mail = formElements.email.value;
     const password = formElements.password.value;
 
-    
-    console.log(mail, password);
+    const formArray = {
+        mail: mail,
+        password: password,
+    };
+
+    if (mail.length === 0) {
+        alert('Please, provide an email')
+    }else if( password.length === 0){
+        alert('Please, enter a password')
+    } else {
+        console.log(formArray);
+    }
 }
